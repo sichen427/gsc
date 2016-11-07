@@ -3,10 +3,17 @@
 <meta charset="utf-8">
   <script src="angular.min.js"></script>
   <script src="gscShengciController.js"></script>
+  <style type="text/css">
+  span{
+    font-size: 250px;
+    border: 1px solid #ccc;
+  }
+  </style>
 </head>
 <body>
   <div ng-controller='gscShengciController'>
-  	{{danci[seq[currentDanci]]}}
+    <!--显示词-->
+  	<span>{{danci[seq[currentDanci]]}}</span>
     <br>
     当前为第{{currentDanci + 1}}个/共{{danci.length}}个
 

@@ -36,16 +36,10 @@ public class ShengciServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		List<String> list = new ArrayList<String>();
-		list.add("aa");
-		list.add("bb");
-		list.add("cc");
-		list.add("dd");
-		list.add("ee");
-		list.add("ff");
-		list.add("gg");
-		list.add("hh");
-		list.add("ii");
-		list.add("jj");
+		list.add("“ú");
+		list.add("ŒŽ");
+		list.add("ˆê");
+		list.add("“ñ");
 		JSONObject jsonObject = new JSONObject();
 		jsonObject.put("data", list);
         String json = jsonObject.toJSONString();
