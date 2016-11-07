@@ -1,0 +1,18 @@
+<html ng-app="shengci">
+<head>
+<meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="gscShengciController.js"></script>
+</head>
+<body>
+  <div ng-controller='gscShengciController'>
+  	{{danci[seq[currentDanci]]}}
+    <br>
+    当前为第{{currentDanci + 1}}个/共{{danci.length}}个
+
+    <!-- ng-show 只有没到最后一页的情况下可以点-->
+    <input type="button" value="前一个" ng-click="preDanci();" ></input>
+    <input type="button" value="下一个" ng-click="nextDanci();" ></input>
+  </div>
+</body>
+</html>
